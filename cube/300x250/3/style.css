@@ -1,0 +1,269 @@
+
+@font-face {
+  font-family: 'Conduit';
+  src: url('conduit_itc_bold1.ttf');
+}
+
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#banner{
+  position: relative;	
+  width:300px;
+  height:250px;
+  overflow: hidden;
+  cursor: pointer;
+  box-sizing: border-box;
+}
+
+img{
+  position: absolute;
+  left:0;
+  top:0;
+  width:300px;
+  height:250px;
+  display: none;
+}
+
+#frame_one {
+  position: absolute;
+  width: 300px;
+  height: 250px;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  display: none;
+}
+
+#frame_two {
+  position: absolute;
+  width: 300px;
+  height: 250px;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  transform: translateX(300px);
+}
+
+#frame_three {
+  position: absolute;
+  width: 300px;
+  height: 250px;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  transform: translateX(300px);
+}
+
+
+#frame_four {
+  position: absolute;
+  width: 300px;
+  height: 250px;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  transform: translateX(300px);
+}
+
+.korting {
+  transform: rotateY(-90deg);
+  transform-origin: 232px 64px;
+}
+
+.f1_title {
+  opacity: 0;
+}
+
+.sub {
+  transform: translateY(8px);
+  opacity: 0;
+}
+
+.f1_shape {
+  width: 0px;
+  height: 26.5px;
+  top: 183px;
+  left: 45px;
+  transform-origin: 0px 50%;
+}
+
+.f1_shape_text {
+  opacity: 0;
+}
+
+
+.f2_korting {
+  transform: rotateY(-90deg);
+  transform-origin: 231px 72px;
+}
+
+.f2_shape {
+  width: 0;
+  top: 134px;
+  left: 54px;
+  height: 69px;
+  transform-origin: 0px 50%;
+}
+
+.f2_shape_text {
+  opacity: 0;
+}
+
+.product_image {
+  transform: translateX(-300px);
+  opacity: 0;
+}
+
+.product_text {
+  transform: translateX(300px);
+}
+
+.product_price {
+  transform: translateY(110px);
+}
+
+.f3_text {
+  transform: translateY(10px);
+  opacity: 0;
+}
+
+.f4_shape {
+  width: 0;
+  top: 159px;
+  left: 9px;
+  height: 36px;
+  transform-origin: 0px 50%;
+}
+
+.f4_shape_text {
+  opacity: 0;
+}
+
+.f4_circle {
+  transform: scale(2) rotateZ(45deg);
+  transform-origin: 23px 178px;
+  opacity: 0;
+}
+
+.f4_text {
+  transform: translateY(8px);
+  opacity: 0;
+}
+
+.cta_bg {
+  transform: translateY(50px);
+  transform-origin: 150px 228px;
+  opacity: 0;
+  z-index: 1;
+}
+
+.cta_1_text {
+  transform: translateY(47px);
+  opacity: 0;
+  z-index: 1;
+}
+
+.cta_2_text {
+  transform: translateX(130px);
+  transform-origin: 150px 228px;
+  z-index: 1;
+  opacity: 0;
+}
+
+.cta_4_text {
+  transform: translateX(130px);
+  transform-origin: 150px 228px;
+  z-index: 1;
+  opacity: 0;
+}
+
+.logo {
+  opacity: 0;
+  z-index: 1;
+}
+
+.f2_overlay {
+  opacity: 0;
+  z-index: 2;
+}
+
+.f4_overlay {
+  opacity: 0;
+  z-index: 4;
+}
+
+
+.brand {
+  opacity: 0;
+  z-index: 1;
+}
+
+.countDiv1 {
+  position: absolute;
+  left: 211px;
+  top: 45px;
+  font-family: 'Conduit';
+  font-size: 26px;
+  color: #ffffff;
+  transform: rotateY(-90deg);
+  transform-origin: center;
+}
+
+.countDiv2 {
+  position: absolute;
+  left: 211px;
+  top: 45px;
+  font-family: 'Conduit';
+  font-size: 26px;
+  color: #ffffff;
+  opacity: 0;
+}
+
+.countDiv3 {
+  position: absolute;
+  left: 211px;
+  top: 45px;
+  font-family: 'Conduit';
+  font-size: 26px;
+  color: #ffffff;
+  opacity: 0;
+}
+
+.f4_kort {
+  transform: scale(1);
+}
+
+.f4_korting_1 {
+  transform-origin: 43px 133px;
+}
+
+.f4_korting_2 {
+  transform-origin: 83px 133px;
+}
+
+.f4_korting_3 {
+  transform-origin: 122px 133px;
+}
+
+.f4_korting_4 {
+  transform-origin: 161px 133px;
+}
+
+.f4_korting_5 {
+  transform-origin: 200px 133px;
+}
+
+.f4_korting_6 {
+  transform-origin: 236px 133px;
+}
+
+.f4_korting_7 {
+  transform-origin: 280px 133px;
+}

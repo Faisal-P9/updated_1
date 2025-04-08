@@ -1,0 +1,735 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, viewport-fit=cover">
+    <meta X-Content-Type-Options="nosniff" http-equiv="Content-Type" />
+    <title>P9 - Websites</title>
+    <link rel="icon" type="image/x-icon" href="assets/favicon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cabin+Sketch:wght@400;700&family=Edu+AU+VIC+WA+NT+Arrows:wght@400..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/swipper.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/jQuery.js" async></script>
+    
+    <script src="js/swipper.js"></script>
+    <script src="js/GSAP.js"></script>
+    <script src="js/scrollTrigger.js"></script>
+    <script src="js/scrollToPlugin.js"></script>
+
+</head>
+<body class="body">
+
+
+    <div id="loader">
+        <img src="https://i.ibb.co/zxtrzkV/loader.gif" alt="" class="loaderImg">
+    </div>
+
+    <div id="allContents">
+
+        <!-- Start Header Code -->
+        <header class="header" id="header">
+            <div class="navbar">
+                <div class="navbar__logo">
+                    <a href="#"><img src="assets/logo.png" alt="logo" width="190px"></a>
+                </div>
+
+                <div class="navbar__toggleBtn" id="navbar__toggleBtn">
+                    <i class="ri-menu-line navbar__toggleBtn--line nav__burger"></i>           
+                    <i class="ri-close-line navbar__toggleBtn--close nav__close"></i>
+                </div>
+
+
+                <ul class="links navbar__big" id="navbar__menu">
+                    <li><a href="#index.html" class="nav__link menuLink">Home</a></li>
+                    <li><a href="#client" class="nav__link menuLink">Klanten</a></li>
+                    <li class="dropdown__item" id="dropdown__item">
+                        <div class="nav__link nav__servicesLink">
+                            Services <i class="ri-arrow-down-s-line dropdown__arrow"></i>
+                        </div>
+   
+                        <ul class="dropdown__menu" id="dropdown__menu">
+                           <li>
+                              <a href="#displayAd" class="dropdown__link nav__link menuLink">
+                                <i class="ri-html5-line"></i> De kunst van HTML5
+                              </a>                          
+                           </li>
+   
+                           <li>
+                              <a href="#weboramaAd" class="dropdown__link nav__link menuLink">
+                                <i class="ri-reserved-line"></i> Bijzondere formaten
+                              </a>
+                           </li>
+
+                           <li>
+                              <a href="#dynamicAd" class="dropdown__link nav__link menuLink">
+                                <i class="ri-brain-2-line"></i> Data-based banners
+                              </a>
+                           </li>
+
+                           <li>
+                              <a href="#shadowAd" class="dropdown__link nav__link menuLink">
+                                <i class="ri-multi-image-fill"></i> Eerste hulp bij precisiewerk
+                              </a>
+                           </li>
+                        </ul>
+                    </li>
+                    <li><a href="#platform" class="nav__link menuLink">Platform</a></li>
+                    <li><a href="#showreel" class="nav__link menuLink">Voorbeelden</a></li>
+                    <li><a href="#about" class="nav__link menuLink">Over Ons</a></li>
+                    <li><a href="blog.html" class="nav__link menuLink">Blog</a></li>
+
+                    <li><a href="#subscribe" class="action_btn menuLink navbar__mailtoBtn navbar__mailtoBtn--smallScreen">Bel of mail ons</a>
+                    </li>
+                </ul>
+                <a href="#subscribe" class="action_btn menuLink navbar__mailtoBtn--bigScreen">Bel of mail ons</a>
+                
+            </div>
+
+            <!-- <div class="dropdown_menu">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#clients">Klanten</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#platform">Platform</a></li>
+                <li><a href="#showcase">Voorbeelden</a></li>
+                <li><a href="#over-ons">Over Ons</a></li>
+                <li><a href="#blog">Blog</a></li>
+                <li><a href="#" class="action_btn">Bel of mail ons</a></li>
+            </div> -->
+
+            
+
+            <div class="header__paralaxColor" id="header__paralaxColorDesktop">
+                <img src="assets/bg.webp" alt="bg" class="bg" id="bg">
+                <img src="assets/planet.webp" alt="big_planet" class="big_planet" id="planet1">
+                <img src="assets/planet2.webp" alt="small_planet" class="small_planet" id="planet2">
+                <img src="assets/sun.webp" alt="sun" class="sun" id="sun">
+
+                <img src="assets/water.webp" alt="water" class="water">
+                <img src="assets/planet_shadow.webp" alt="planet_shadow" class="planet_shadow" id="planet_shadow">
+
+                <img src="assets/cloud.webp" alt="cloud" class="cloud" id="cloud">
+
+                <img src="assets/island_small.webp" alt="small_island" class="small_island" id="small_island">
+                <img src="assets/island_right_big.webp" alt="big_island" class="big_island" id="big_island">
+                <img src="assets/island_left_small.webp" alt="small_island_left" class="small_island_left" id="small_island_left">
+                <img src="assets/island_middle.webp" alt="middle_island" class="middle_island" id="middle_island">
+                <img src="assets/front_grass.webp" alt="grass" class="grass" id="grass">
+                <img src="assets/white_border_shape.webp" alt="white_border_shape" class="white_border_shape" id="white_border_shape">
+                <div class="header__text" id="header__text">
+                    PLANET 9 IS HIER VOOR JOU
+                    <p class="header__smallText">Wij doen het werk waar jij geen zin in hebt: de productie van jouw online marketing. En dat doen we snel, goedkoop en goed.</p>
+                </div>
+            </div>
+
+
+            <div class="header__paralaxBlack" id="header__paralaxBlackDesktop">
+                <img src="assets/bg.webp" alt="" class="bg black_white" id="bg_black">
+                <img src="assets/planet.webp" alt="" class="big_planet black_white" id="planet1_black">
+                <img src="assets/planet2.webp" alt="" class="small_planet black_white" id="planet2_black">
+                <img src="assets/sun.webp" alt="" class="sun black_white" id="sun_black">
+
+                <img src="assets/water.webp" alt="" class="water black_white">
+                <img src="assets/planet_shadow.webp" alt="" class="planet_shadow black_white" id="planet_shadow_black">
+
+                <img src="assets/cloud.webp" alt="cloud" class="cloud black_white" id="cloud_black">
+
+
+                <img src="assets/island_small.webp" alt="" class="small_island black_white" id="small_island_black">
+                <img src="assets/island_right_big.webp" alt="" class="big_island black_white" id="big_island_black">
+                <img src="assets/island_left_small.webp" alt="" class="small_island_left black_white" id="small_island_left_black">
+                <img src="assets/island_middle.webp" alt="" class="middle_island black_white" id="middle_island_black">
+                <img src="assets/front_grass.webp" alt="" class="grass black_white" id="grass_black">
+                <img src="assets/white_border_shape.webp" alt="white_border_shape" class="white_border_shape black_white" id="white_border_shape_black">
+                <div class="header__text" id="header__textBlack">
+                    PLANET 9 IS HIER VOOR JOU
+                    <p class="header__smallText">Wij doen het werk waar jij geen zin in hebt: de productie van jouw online marketing. En dat doen we snel, goedkoop en goed.</p>
+                </div>
+            </div>
+
+
+            <div class="header__paralaxColor" id="header__paralaxColorTablet">
+                <img src="asset/bg_laptop.webp" alt="bg" class="bg" id="bg_laptop">
+                <img src="asset/planet_tablet.webp" alt="" class="big_planet black_white" id="planet1_laptop">               
+                <img src="asset/planet2_laptop.webp" alt="small_planet" class="small_planet" id="planet2_laptop">
+                <img src="asset/sun_laptop.webp" alt="sun" class="sun" id="sun_laptop">
+
+                <img src="asset/water_laptop.webp" alt="water" class="water">
+                <img src="asset/planet_shadow_laptop.webp" alt="planet_shadow" class="planet_shadow" id="planet_shadow_laptop">
+
+                <img src="asset/cloud_laptop.webp" alt="cloud" class="cloud" id="cloud_laptop">
+
+                <img src="asset/island_right_big_laptop.webp" alt="big_island" class="big_island" id="big_island_laptop">
+                
+                <img src="asset/island_middle_laptop.webp" alt="middle_island" class="middle_island" id="middle_island_laptop">
+                <img src="asset/front_grass_laptop.webp" alt="grass" class="grass" id="grass_laptop">
+                <img src="asset/white_border_shape_laptop.webp" alt="white_border_shape" class="white_border_shape" id="white_border_shape_laptop">
+                <div class="header__text" id="header__text_laptop">
+                    PLANET 9 IS HIER VOOR JOU
+                    <p class="header__smallText">Wij doen het werk waar jij geen zin in hebt: de productie van jouw online marketing. En dat doen we snel, goedkoop en goed.</p>
+                </div>
+            </div>
+
+
+            <div class="header__paralaxBlack" id="header__paralaxBlackTablet">
+                <img src="asset/bg_laptop.webp" alt="" class="bg black_white" id="bg_black_laptop">
+                <img src="asset/planet_tablet.webp" alt="" class="big_planet black_white" id="planet1_black_laptop">               
+                <img src="asset/planet2_laptop.webp" alt="" class="small_planet black_white" id="planet2_black_laptop">
+                <img src="asset/sun_laptop.webp" alt="" class="sun black_white" id="sun_black_laptop">
+
+                <img src="asset/water_laptop.webp" alt="" class="water black_white">
+
+                <img src="asset/planet_shadow_laptop.webp" alt="planet_shadow" class="planet_shadow" id="planet_shadow_black_laptop">
+
+                <img src="asset/cloud_laptop.webp" alt="cloud" class="cloud black_white" id="cloud_black_laptop">
+
+
+                <img src="asset/island_right_big_laptop.webp" alt="" class="big_island black_white" id="big_island_black_laptop">
+                
+                <img src="asset/island_middle_laptop.webp" alt="" class="middle_island black_white" id="middle_island_black_laptop">
+                <img src="asset/front_grass_laptop.webp" alt="" class="grass black_white" id="grass_black_laptop">
+                <img src="asset/white_border_shape_laptop.webp" alt="white_border_shape" class="white_border_shape black_white" id="white_border_shape_black_laptop">
+                <div class="header__text" id="header__textBlack_laptop">
+                    PLANET 9 IS HIER VOOR JOU
+                    <p class="header__smallText">Wij doen het werk waar jij geen zin in hebt: de productie van jouw online marketing. En dat doen we snel, goedkoop en goed.</p>
+                </div>
+            </div>
+
+
+        </header>
+     <!-- End Header Code -->
+      
+
+    <!-- Start Main Code -->
+    <main>
+
+        <!-- Start Client Section Code -->
+        <section class="client section" id="client">
+
+            <div class="primary-text black center" id="primary-text">
+                <div class="pt">K</div>
+                <div class="pt">i</div>
+                <div class="pt">j</div>
+                <div class="pt">k</div>
+                <div class="pt">,</div>
+                <div class="pt">&nbsp;</div>
+                <div class="pt">b</div>
+                <div class="pt">l</div>
+                <div class="pt">i</div>
+                <div class="pt">j</div>
+                <div class="pt">e</div>
+                <div class="pt">&nbsp;</div>
+                <div class="pt">k</div>
+                <div class="pt">l</div>
+                <div class="pt">a</div>
+                <div class="pt">n</div>
+                <div class="pt">t</div>
+                <div class="pt">e</div>
+                <div class="pt">n</div>
+                <div class="pt">!</div>
+            </div>
+
+            <div class="row100">
+                <div class="client__imageSlider slider">
+                    <div class="client__imageSlider--slide slide">
+                        <img src="assets/quatt.png" alt="">
+                        <img src="assets/joolz.png" alt="">
+                        <img src="assets/dmm.png" alt="">
+                        <img src="assets/dirk.png" alt="">
+                        <img src="assets/dekamarkt.png" alt="">
+                        <img src="assets/merkle.png" alt="">
+                        <img src="assets/perrysports.png" alt="">
+                        <img src="assets/bluemovement.png" alt="">
+                        <img src="assets/usc.png" alt="">
+                        <img src="assets/james.png" alt="">
+                        <img src="assets/vuur.png" alt="">
+                        <img src="assets/score4toto.png" alt="">
+                    </div>
+
+                    <div class="client__imageSlider--slide slide">
+                        <img src="assets/quatt.png" alt="">
+                        <img src="assets/joolz.png" alt="">
+                        <img src="assets/dmm.png" alt="">
+                        <img src="assets/dirk.png" alt="">
+                        <img src="assets/dekamarkt.png" alt="">
+                        <img src="assets/merkle.png" alt="">
+                        <img src="assets/perrysports.png" alt="">
+                        <img src="assets/bluemovement.png" alt="">
+                        <img src="assets/usc.png" alt="">
+                        <img src="assets/james.png" alt="">
+                        <img src="assets/vuur.png" alt="">
+                        <img src="assets/score4toto.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- End Client Section Code -->
+
+
+        <!-- Start Ads Section Code -->
+
+        <section class="displayAd section" id="displayAd">
+            <div class="row displayAd__row mb-n-4">
+                <div class="col-1-of-2 displayAd__col1">
+                    <div class="displayAd__heading displayAd__head secondary-heading mb-2">De kunst van HTML5</div>
+                    <p class="displayAd__paragraph displayAd__head paragraph mb-3">Met HTML5 kun je alle kanten op. Een spectaculaire animatie, dynamische content, interactie of video: wij realiseren wat jij in je hoofd hebt. Strakke banners van topkwaliteit.</p>
+                    <div class="displayAd__head"><a href="#subscribe" class="displayAd__btn services_btn">Ontdek de mogelijkheden</a></div>
+                </div>
+
+                <div class="col-1-of-2 displayAd__col2 displayAd__head">
+                    <div class="displayAd__col2Wrap">
+                        <div class="displayAd__swipecubeBg">
+                            <div class="displayAd__swipecubeBg--shape">
+    
+                            </div>
+                        </div>
+                        <div class="swiper cubes" style="width: 300px; height: 250px; margin-left: 20px; margin-right: 20px;">
+                            <!-- Additional required wrapper -->
+                            <div class="swiper-wrapper">
+                                <!-- Slides -->
+                                <div class="iframe-container-div swiper-slide" id="slide1">
+                                <iframe src="cube/300x250/1/index.html" width="300" height="250"></iframe>
+                                </div>
+                                <div class="iframe-container-div swiper-slide" id="slide2"></div>
+                                <div class="iframe-container-div swiper-slide" id="slide3"></div>
+                                <div class="iframe-container-div swiper-slide" id="slide4"></div>
+                            </div>
+                            <!-- If we need pagination -->
+                            <!-- If we need pagination -->
+                            <div class="swiper-pagination"></div>
+    
+                            <!-- If we need navigation buttons -->
+                            <div class="swiper-button-prev"></div>
+                            <div class="swiper-button-next"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            
+        </section>
+
+        <!-- End Display Ads Section Code -->
+
+
+        <!-- Start Subscription Section Code -->
+        <section class="subscribe section" id="subscribe">
+            <div class="row subscribe__row mb-n-4">
+
+                <div class="primary-text black center subscribe__primaryText" id="subscribe-primary-text">
+                    <div class="pt">S</div>
+                    <div class="pt">u</div>
+                    <div class="pt">b</div>
+                    <div class="pt">s</div>
+                    <div class="pt">c</div>
+                    <div class="pt">r</div>
+                    <div class="pt">i</div>
+                    <div class="pt">b</div>
+                    <div class="pt">e</div>
+                </div>
+
+                <div id="mc_embed_shell">
+                    <link href="css/mailchimp.css" rel="stylesheet" type="text/css">
+                <style type="text/css">
+                      #mc_embed_signup{background:#fff; clear:left; font:14px 'Montserrat', sans-serif; width: 600px;}
+                      /* Add your own Mailchimp form style overrides in your site stylesheet or in this style block.
+                         We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. */
+                </style>
+                <div id="mc_embed_signup">
+                    <form action="https://planetnine.us13.list-manage.com/subscribe/post?u=d146ee303d6d52f0cfbbddc17&amp;id=88645d3217&amp;f_id=00ec88eaf0" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank">
+                        <div id="mc_embed_signup_scroll">
+                            <div class="indicates-required"><span class="asterisk">*</span> indicates required</div>
+                            <div class="mc-field-group"><label for="mce-EMAIL"><span class="asterisk"></span></label><input type="email" name="EMAIL" class="required email" id="mce-EMAIL" placeholder="Your Email" required="" value=""></div>
+                        <div id="mce-responses" class="clear foot">
+                            <div class="response" id="mce-error-response" style="display: none;"></div>
+                            <div class="response" id="mce-success-response" style="display: none;"></div>
+                        </div>
+                    <div aria-hidden="true" style="position: absolute; left: -5000px;">
+                        /* real people should not fill this in and expect good things - do not remove this or risk form bot signups */
+                        <input type="text" name="b_d146ee303d6d52f0cfbbddc17_88645d3217" tabindex="-1" value="">
+                    </div>
+                        <div class="optionalParent">
+                            <div class="clear foot">
+                                <input type="submit" name="subscribe" id="mc-embedded-subscribe" class="button" value="Get Quote">
+                                <p style="margin: 0px auto;"><a href="http://eepurl.com/iOfpA6" title="Mailchimp - email marketing made easy and fun"><span style="display: inline-block; background-color: transparent; border-radius: 4px;"><img class="refferal_badge" src="https://digitalasset.intuit.com/render/content/dam/intuit/mc-fe/en_us/images/intuit-mc-rewards-text-dark.svg" alt="Intuit Mailchimp" style="width: 220px; height: 40px; display: flex; padding: 2px 0px; justify-content: center; align-items: center;"></span></a></p>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+                </div>
+                <script type="text/javascript" src="js/mc-validate.js"></script><script type="text/javascript">(function($) {window.fnames = new Array(); window.ftypes = new Array();fnames[0]='EMAIL';ftypes[0]='email';}(jQuery));var $mcj = jQuery.noConflict(true);</script></div>
+            
+            </div>
+        </section>
+        <!-- End Subscription Section Code -->
+
+        <!-- Start Weborama Ads Section Code -->
+        <section class="weboramaAd section" id="weboramaAd">
+            <div class="row weboramaAd__row">
+                <div class="weboramaAd__col1">
+                    <div class="weboramaAd__heading weboramaAd__head secondary-heading mb-2">Bijzondere formaten</div>
+                    <p class="weboramaAd__paragraph weboramaAd__head paragraph mb-3">Trek de aandacht en raak je doelgroep op een dieper niveau. Met Rich Media ads en Weborama Templates creëer je krachtige banners van hoge kwaliteit. Digitale advertenties die tegelijkertijd je merkwaarden verstevigen én uitnodigen tot actie.</p>
+                    <div class="weboramaAd__head"><a href="#about" class="weboramaAd__btn services_btn">Neem contact op</a></div>
+                </div>
+
+                <div class="weboramaAd__col2">
+                    <div class="weboramaAd__bg  weboramaAd__head">
+
+                        <div class="weboramaAd__bg--prev"></div>
+                        <div class="weboramaAd__bg--next"></div>
+
+                        <video class="weboramaAd__bg--content video-one" playsinline webkit-playsinline autoplay muted controlslist="nodownload noremoteplayback">
+                            <source src="assets/imac.mp4" type="video/mp4">
+                            <source src="assets/imac.webm" type="video/webm">
+                        </video>
+
+                        <video class="weboramaAd__bg--content  video-two" playsinline webkit-playsinline autoplay muted controlslist="nodownload noremoteplayback">
+                            <source src="assets/phone.mp4" type="video/mp4">
+                            <source src="assets/phone.webm" type="video/webm">
+                        </video>
+
+                        <video class="weboramaAd__bg--content video-three" playsinline webkit-playsinline autoplay muted controlslist="nodownload noremoteplayback">
+                            <source src="assets/swipecube.mp4" type="video/mp4">
+                            <source src="assets/swipecube.webm" type="video/webm">
+                        </video>
+                    </div>
+
+                    <div class="weboramaAd__devicesWrap">
+                        <div class="weboramaAd__devices">
+                            <div class="weboramaAd__devices--apto weboramaAd__devices--bt" id="apto">APTO</div>
+                            <div class="weboramaAd__devices--interstial weboramaAd__devices--bt" id="interstial">Interstial</div>
+                            <div class="weboramaAd__devices--swipeCube weboramaAd__devices--bt" id="swipeCubeWeb">Swipecube</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- End Weborama Ads Section Code -->
+
+
+
+
+        <!-- Start Platform Section Code -->
+        <section class="platform section" id="platform">
+            <div class="primary-text black center" id="primary-text">
+                <div class="pt">D</div>
+                <div class="pt">i</div>
+                <div class="pt">t</div>
+                <div class="pt">&nbsp;</div>
+                <div class="pt">h</div>
+                <div class="pt">e</div>
+                <div class="pt">b</div>
+                <div class="pt">b</div>
+                <div class="pt">e</div>
+                <div class="pt">n</div>
+                <div class="pt">&nbsp;</div>
+                <div class="pt">w</div>
+                <div class="pt">i</div>
+                <div class="pt">j</div>
+                <div class="pt">&nbsp;</div>
+                <div class="pt">i</div>
+                <div class="pt">n</div>
+                <div class="pt">&nbsp;</div>
+                <div class="pt">h</div>
+                <div class="pt">u</div>
+                <div class="pt">i</div>
+                <div class="pt">s</div>
+            </div>
+
+            <div class="row100">
+                <div class="platform__imageSlider slider">
+                    <div class="platform__imageSlider--slide slide">
+                        <img src="assets/google_ads.png" alt="Google ads">
+                        <img src="assets/studio.png" alt="Studio">
+                        <img src="assets/campaign_manager.png" alt="Campaign Manager 360">
+                        <img src="assets/dv360.png" alt="DV360">
+                        <img src="assets/ad_manager.png" alt="Google Ad Manager">
+                        <img src="assets/xandr.png" alt="xandr">
+                        <img src="assets/weborama.png" alt="Weborama">
+                        <img src="assets/sizmek.png" alt="Sizmek">
+                        <img src="assets/adform.png" alt="Adform">
+                    </div>
+
+                    <div class="platform__imageSlider--slide slide">
+                        <img src="assets/google_ads.png" alt="Google ads">
+                        <img src="assets/studio.png" alt="Studio">
+                        <img src="assets/campaign_manager.png" alt="Campaign Manager 360">
+                        <img src="assets/dv360.png" alt="DV360">
+                        <img src="assets/ad_manager.png" alt="Google Ad Manager">
+                        <img src="assets/xandr.png" alt="xandr">
+                        <img src="assets/weborama.png" alt="Weborama">
+                        <img src="assets/sizmek.png" alt="Sizmek">
+                        <img src="assets/adform.png" alt="Adform">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- End Platform Section Code -->
+
+
+
+
+    <!-- Start Dynamic Ad Section Code -->
+        <section class="dynamicAd section" id="dynamicAd">
+            <div class="row dynamicAd__row">
+                <div class="col-1-of-2 dynamicAd__col1">
+                    <div class="dynamicAd__heading dynamicAd__head secondary-heading mb-2">Data-based banners</div>
+                    <p class="dynamicAd__paragraph dynamicAd__head paragraph mb-3">Speel in op de locatie, het weer, de prijs, you name it. Met deze dynamische banners creëer je mini-websites waarvan de content verandert op basis van data. Zo blijf je relevant én up-to-date.</p>
+                    <div class="dynamicAd__head"><a href="#subscribe" class="dynamicAd__btn services_btn">We helpen je graag</a></div>
+                </div>
+
+                <div class="col-1-of-2 dynamicAd__col2 dynamicAd__head">
+                    
+                    <div class="dynamicAd__wrap">
+                        <div class="dynamicAd__peopleBg"></div>
+                        
+                        <div class="dynamicAd__images">
+                            <div class="dynamicAd__images--one">
+                                <img src="assets/dynamic_amsterdam.png" alt="dynamic_amsterdam" class="dynamic_amsterdam">
+                                <img src="assets/dynamic_amsterdam_dot_1.png" alt="" class="dynamicAd__images--one__dot dynamicAd__ams_dot1">
+                                <img src="assets/dynamic_amsterdam_dot_2.png" alt="" class="dynamicAd__images--one__dot dynamicAd__ams_dot2">
+                                <img src="assets/dynamic_amsterdam_dot_3.png" alt="" class="dynamicAd__images--one__dot dynamicAd__ams_dot3">
+                                <img src="assets/dynamic_amsterdam_dot_4.png" alt="" class="dynamicAd__images--one__dot dynamicAd__ams_dot4">
+                                <img src="assets/dynamic_amsterdam_dot_5.png" alt="" class="dynamicAd__images--one__dot dynamicAd__ams_dot5">
+                                <img src="assets/amsterdam_ad.png" alt="dynamicAd__ams--pic" class="dynamicAd__ams--pic">
+                                <img src="assets/amsterdam_arrow.png" alt="" class="dynamicAd__ams--arrow">
+                            </div>
+    
+                            <div class="dynamicAd__images--two">
+                                <img src="assets/dynamic_rotterdam.png" alt="dynamic_rotterdam" class="dynamic_rotterdam">
+                                <img src="assets/dynamic_rotterdam_dot_1.png" alt="" class="dynamicAd__images--two__dot dynamicAd__rot_dot1">
+                                <img src="assets/dynamic_rotterdam_dot_2.png" alt="" class="dynamicAd__images--two__dot dynamicAd__rot_dot2">
+                                <img src="assets/dynamic_rotterdam_dot_3.png" alt="" class="dynamicAd__images--two__dot dynamicAd__rot_dot3">
+                                <img src="assets/dynamic_rotterdam_dot_4.png" alt="" class="dynamicAd__images--two__dot dynamicAd__rot_dot4">
+                                <img src="assets/dynamic_rotterdam_dot_5.png" alt="" class="dynamicAd__images--two__dot dynamicAd__rot_dot5">
+                                <img src="assets/rotterdam_ad.png" alt="dynamicAd__rot--pic" class="dynamicAd__rot--pic">
+                                <img src="assets/rotterdam_arrow.png" alt="" class="dynamicAd__rot--arrow">
+                            </div>
+    
+                            <div class="dynamicAd__images--three">
+                                <img src="assets/dynamic_denhaag.png" alt="dynamic_denhaag" class="dynamic_denhaag">
+                                <img src="assets/dynamic_denhaag_dot_1.png" alt="" class="dynamicAd__images--three__dot dynamicAd__den_dot1">
+                                <img src="assets/dynamic_denhaag_dot_2.png" alt="" class="dynamicAd__images--three__dot dynamicAd__den_dot2">
+                                <img src="assets/dynamic_denhaag_dot_3.png" alt="" class="dynamicAd__images--three__dot dynamicAd__den_dot3">
+                                <img src="assets/dynamic_denhaag_dot_4.png" alt="" class="dynamicAd__images--three__dot dynamicAd__den_dot4">
+                                <img src="assets/dynamic_denhaag_dot_5.png" alt="" class="dynamicAd__images--three__dot dynamicAd__den_dot5">
+                                <img src="assets/denhaag_ad.png" alt="dynamicAd__den--pic" class="dynamicAd__den--pic">
+                                <img src="assets/denhaag_arrow.png" alt="" class="dynamicAd__den--arrow">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    <!-- End of Dynamic Ads Section Code -->
+
+
+
+    <!-- Start Showreel Section Code -->
+    <section class="showreel section" id="showreel">
+        <div class="primary-text black center showreel__primaryText" id="primary-text">
+            <div class="pt">V</div>
+            <div class="pt">o</div>
+            <div class="pt">o</div>
+            <div class="pt">r</div>
+            <div class="pt">b</div>
+            <div class="pt">e</div>
+            <div class="pt">e</div>
+            <div class="pt">l</div>
+            <div class="pt">d</div>
+            <div class="pt">e</div>
+            <div class="pt">n</div>
+            <!-- <div class="pt">s</div> -->
+        </div>
+        <div class="row">
+            <div class="showreel__wrap">
+                <div class="showreel__wrap--bgshape"></div>
+                <div class="showreel__wrap--bgvideo">
+                    <video class="showreel__wrap--bgvideoContent" playsinline webkit-playsinline autoplay loop muted controlslist="nodownload">
+                        <source src="assets/showreel.mp4" type="video/mp4">
+                        <source src="assets/showreel.webm" type="video/webm">
+                    </video>
+                </div>
+            </div>          
+        </div>
+    </section>
+    <!-- End Showreel Section Code -->
+
+        
+
+    <!-- Start Weborama Ads Section Code -->
+        <section class="shadowAd section" id="shadowAd">
+            <div class="row shadowAd__row">
+                <div class="shadowAd__col1">
+                    <div class="shadowAd__heading shadowAd__head secondary-heading mb-2">Eerste hulp bij precisiewerk</div>
+                    <p class="shadowAd__paragraph shadowAd__head paragraph mb-3">We leven in een beeldcultuur. En wij kunnen jouw beelden laten stralen. Met professionele retouchering, kleurcorrecties en het wegpoetsen van storende elementen. Hoe vaker je dit door ons laat doen, hoe beter we je kunnen helpen.</p>
+                    <div class="shadowAd__head"><a href="#subscribe" class="shadowAd__btn services_btn">Vraag een offerte aan</a></div>
+                </div>
+
+                <div class="shadowAd__col2">
+                    <div class="shadowAd__sketchImageWrap">
+                        <div class="shadowAd__sketchImage shadowAd__head">
+                            <div class="wrapper">
+                                <div class="shadowAd__topSelect">
+                                    <div class="shadowAd__topSelect--name shadowAd__topSelect--one">Before</div>
+                                    <div class="shadowAd__topSelect--name shadowAd__topSelect--two">After</div>
+                                </div>
+        
+                                <div class="before before_1" id="before_1">
+                                  <img class="content-image" src="assets/clipping_before.jpg" alt="" draggable="false"/>   </div>
+                                <div class="after after_1" id="after_1">
+                                  <img class="content-image" src="assets/clipping_after.jpg" alt="" draggable="false"/>
+                                </div>
+        
+                                <div class="before before_2" id="before_2">
+                                    <img class="content-image" src="assets/product_organized_before.jpg" alt="" draggable="false"/>   </div>
+                                <div class="after after_2" id="after_2">
+                                <img class="content-image" src="assets/product_organized_after.jpg" alt="" draggable="false"/>
+                                </div>
+        
+                                <div class="before before_3" id="before_3">
+                                <img class="content-image" src="assets/without_shadow_before.jpg" alt="" draggable="false"/>   </div>
+                                <div class="after after_3" id="after_3">
+                                <img class="content-image" src="assets/with_shadow_after.jpg" alt="" draggable="false"/>
+                                </div>
+        
+                                <div class="scroller">
+                                  <svg class="scroller__thumb" xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 100 100"><polygon points="0 50 37 68 37 32 0 50" style="fill:#9f76fd"/><polygon points="100 50 64 32 64 68 100 50" style="fill:#9f76fd"/></svg>
+                                </div>
+        
+                                <div class="shadowAd__selectWrap">
+                                    <div class="shadowAd__select">
+                                        <div class="shadowAd__select--btn shadowAd__select--one" id="shadowAd__select--one">Image Clipping</div>
+                                        <div class="shadowAd__select--btn shadowAd__select--two" id="shadowAd__select--two">Product Organized</div>
+                                        <div class="shadowAd__select--btn shadowAd__select--three" id="shadowAd__select--three">Shadow Image</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- End of Weborama Ads Section Code -->
+
+
+
+
+        <!-- Start Subscribe Section Code -->
+        <section class="about section" id="about">
+            <div class="primary-text black center" id="about-primaryText">
+                <div class="pt">O</div>
+                <div class="pt">v</div>
+                <div class="pt">e</div>
+                <div class="pt">r</div>
+                <div class="pt">&nbsp;</div>
+                <div class="pt">O</div>
+                <div class="pt">n</div>
+                <div class="pt">s</div>
+            </div>
+            <div class="row about__row">
+                <div class="about__wrapper">
+                    <div class="about__textPart">
+                        <!-- <div class="about__textPart--heading secondary-heading mb-4">Over Ons</div> -->
+    
+                        <p class="paragraph-small mb-4">Hi, wij zijn Planet Nine. En wij doen waar jij geen zin in hebt: digitale banners ontwikkelen. Banners waarop jij je merkverhaal kan vertellen. Of een promotie onder de aandacht kan brengen. In apps, op websites en op outdoor reclameborden.</p>
+                        <p class="paragraph-small mb-4">Elk project begint in Nederland, bij Chris Beijer of Taco Stomps. De uitwerking vindt plaats in onze studio in Dhaka, Bangladesh. Met een eigen kantoor en personeel ter plaatse kunnen wij direct schakelen. Zo kunnen we hoogwaardig maatwerk leveren tegen scherpe prijzen.</p>
+                        <p class="paragraph-small mb-4">Het maakt niet uit of het creatieve idee van jouw merk, ons team of een marketingbureau komt: wij verzorgen de productie in jouw huisstijl. Voor grotere klanten bieden we de mogelijkheid om een dedicated team samen te stellen. Zo kunnen we optijmaal inspelen op de behoefte van elke project. Klinkt goed?</p>
+                        <div class="about__head"><a href="#subscribe" class="about__btn services_btn">Vraag een offerte aan</a></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+        <div class="circleWrap" id="circleWrap">
+            <div id="clientCircle" class="clientCircle circleAll"></div>
+            <div id="displayCircle" class="displayCircle circleAll"></div>
+            <div id="subscribeCircle" class="subscribeCircle circleAll"></div>
+            <div id="richCircle" class="richCircle circleAll"></div>
+            <div id="platformCircle" class="platformCircle circleAll"></div>
+            <div id="dynamicCircle" class="dynamicCircle circleAll"></div>
+            <div id="showreelCircle" class="showreelCircle circleAll"></div>
+            <div id="productionCircle" class="productionCircle circleAll"></div>
+            <div id="aboutCircle" class="aboutCircle circleAll"></div>
+        </div>
+
+    </main>
+    <!-- End Main Code -->
+
+    <!-- Start Footer Code -->
+    <footer class="footer contact">
+
+        <div class="row contact__row">
+            <div class="footer__logo mb-5">
+                <a href="#"><img src="assets/footer_logo.png" alt="logo" class="footer-logo"></a>
+            </div>
+
+            <div class="contact__wrapper">
+                <div class="col-1-of-3 contact__partOne">
+                    <div class="contact__infoPartOne">
+                        <span class="contact__infoPartOne--email">
+                            <img src="assets/email.png" alt=""> production@planetnine.com
+                        </span>
+
+                        <span class="contact__infoPartOne--location">
+                            <img src="assets/location.png" alt=""> Anthony Fokkerweg 3 1059CM Amsterdam,
+                            The Netherlands
+                        </span>                      
+                    </div>
+                </div>
+
+                <div class="col-1-of-3 contact__partTwo">
+                    <div class="contact__infoPartTwo">
+                        <span class="contact__infoPartTwo--phoneChris">
+                            <img src="assets/telephone.png" alt=""> Chris Beijer : +31681637146
+                        </span>
+
+                        <span class="contact__infoPartTwo--phoneTaco">
+                            <img src="assets/telephone.png" alt=""> Taco Stomps : +31653459211
+                        </span>
+                    </div>
+                </div>
+
+                <div class="col-1-of-3 contact__partThree">
+                    <div class="contact__infoPartThree">
+                        <span class="contact__infoPartThree--vat">
+                            <img src="assets/vat.png" alt=""> BTW (VAT) nummer: NL 859306793B01
+                        </span>
+
+                        <span class="contact__infoPartThree--koc">
+                            <img src="assets/group.png" alt=""> KVK (COC) nummer: 72978074
+                        </span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- <div class="row contact__row"> -->
+                <div class="contact__social mb-3">
+                    <ul class="contact__social--menu">
+                        <li><a href="https://facebook.com/" target="_blank" class="contact__social--menu__facebook"></a></li>
+                        <li><a href="https://whatsapp.com/" target="_blank" class="contact__social--menu__whatsapp"></a></li>
+                        <li><a href="https://linkedin.com/" target="_blank" class="contact__social--menu__linkedin"></a></li>
+                    </ul>
+                </div>
+            <!-- </div> -->
+
+            <!-- <div class="row contact__row"> -->
+                <p class="paragraph-small contact__paragraph--small center">&copy; 2024 All Right Reserved, Planet Nine.</p>
+            <!-- </div> -->
+        </div>
+    </footer>
+    <!-- End Footer Code -->
+     
+ </div>
+
+
+
+    <script src="js/main.js" async></script>
+
+</body>
+</html>

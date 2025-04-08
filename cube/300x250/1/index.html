@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>SURBV</title>
+    <meta charset="UTF-8">
+    <meta name="ad.size" content="width=300,height=250">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="GSAP.js"></script>
+</head>
+<body onload="myFunction()">
+
+    <div id="banner">
+
+        <img src="f1_bg.jpg" alt="f1_bg" class="f1_bg">
+        <img src="f1_t.png" alt="f1_t" class="f1_t">
+
+        <img src="f2_bg_1.jpg" alt="f2_bg_1" class="f2_bg_1">
+        <img src="f2_bg_2.jpg" alt="f2_bg_2" class="f2_bg_2">
+        <img src="f2_shape_bottom.png" alt="f2_shape_bottom" class="f2_shape_bottom">
+        <div class="f2_shape_top"></div>
+        <img src="f2_t.png" alt="f2_t" class="f2_t">
+
+        <img src="f3_bg_top.png" alt="f3_bg_top" class="f3_bg_top">
+        <img src="f3_bg_bottom.png" alt="f3_bg_bottom" class="f3_bg_bottom">
+        <img src="f3_t.png" alt="f3_t" class="f3_t">
+
+        <img src="f4_bg_top.png" alt="f4_bg_top" class="f4_bg_top">
+        <img src="f4_bg_bottom.png" alt="f4_bg_bottom" class="f4_bg_bottom">
+        <img src="f4_shape_left.png" alt="f4_shape_left" class="f4_shape_left">
+        <div class="f4_shape_right"></div>
+        <img src="f4_t.png" alt="f4_t" class="f4_t">
+
+        <img src="f5_bg.png" alt="f5_bg" class="f5_bg">
+        <img src="f5_shape_bottom.png" alt="f5_shape_bottom" class="f5_shape_bottom">
+        <div class="f5_shape_top"></div>
+        <img src="logo.png" alt="logo" class="logo">
+        <img src="cta.png" alt="cta" class="cta">
+        <img src="logo_2.png" alt="logo2" class="logo2">
+
+    </div>
+
+    <script>
+        
+        
+        function myFunction() {
+
+        var t1 = gsap.timeline({repeat: 0, repeatDelay: 0});
+
+
+            t1
+            .to('img', { duration: 0, display: 'block' })
+
+            .to('.f1_t', { duration: 0.6, x: 0, ease: 'power2.out' })
+            .to('.f2_shape_bottom', { duration: 0, opacity: 1, ease: 'power0.in' }, '-=.3')
+            .to('.f2_shape_top', { duration: 1, height: 164, ease: 'power0.out' }, '-=.3')
+            .to('.f2_bg_1', { duration: 0, opacity: 1, ease: 'power0.out' })
+
+            .add('f1')
+            .to('.f2_shape_bottom', { duration: 0.8, x: -68, ease: 'power2.out' }, 'f1')
+            .to('.f2_shape_top', { duration: 0.8, x: -68, ease: 'power2.out' }, 'f1')
+            .to('.f2_bg_2', { duration: 0.8, x: 101, ease: 'power2.out' }, 'f1')
+            
+            .add('f2', '-=.7')
+            .to('.f2_bg_1', { duration: 0.7, x: -88, ease: 'power1.out' }, 'f2')
+            .to('.f2_shape_bottom', { duration: 0.7, x: -169, ease: 'power1.out' }, 'f2')
+            .to('.f2_shape_top', { duration: 0.7, x: -169, ease: 'power1.out' }, 'f2')
+            .to('.f2_bg_2', { duration: 0.7, x: 0, ease: 'power1.out' }, 'f2')
+            .to('.f2_t', { duration: 0.7, x: 0, ease: 'power1.out' }, 'f2')
+            
+            .add('f3', '+=0.4')
+            .to('.f3_bg_top', { duration: 0.8, y: 0, ease: 'power2.out' }, 'f3')
+            .to('.f3_bg_bottom', { duration: 0.8, y: 0, ease: 'power2.out' }, 'f3')
+            .to('.f3_t', { duration: 0.8, y: 0, ease: 'power2.out' }, 'f3')
+
+            .add('f4', '+=0.7')
+            .to('.f4_bg_top', { duration: 0, opacity: 1, ease: 'power0.out' }, 'f4')
+            .to('.f4_shape_left', { duration: 0.1, opacity: 1, ease: 'power0.out' })
+            .to('.f4_shape_right', { duration: 0.1, opacity: 1, ease: 'power0.out' }, '-=.1')
+            .to('.f4_shape_right', { duration: 1, width: 220, ease: 'power0.out' }, '-=.1')
+            .to('.f4_t', { duration: 0.8, x: 0, ease: 'power0.in' }, '-=1')
+            .to('.f4_bg_bottom', { duration: 0.8, y: 0, ease: 'power1.out' }, '-=.7')
+            
+            .to('.f5_bg', { duration: 0.8, y: 0, ease: 'power2.out' }, '+=0.6')
+            .to('.logo2', { duration: 0.4, opacity: 1, ease: 'power2.out' }, '-=.55')
+            .to('.cta', { duration: 0.8, y: 0, ease: 'power2.out' }, '-=.6')
+
+            .to('.f5_shape_bottom', { duration: 0, opacity: 1, ease: 'power1.in' }, '-=.3')
+            .to('.f5_shape_top', { duration: 1, height: 167, ease: 'power0.out' }, '-=.3')
+
+
+        }
+
+    </script>
+
+
+    <script type="text/javascript">
+
+        var clickTag = "https://google.com/";
+        var banner = document.getElementById("banner");
+        banner.style.cursor = "pointer";
+        banner.addEventListener("click", goURL);
+
+        function goURL() {
+            window.open(clickTag);
+        }
+
+    </script>
+
+</body>
+</html>

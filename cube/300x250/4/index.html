@@ -1,0 +1,92 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>De Middag Vrouw</title>
+<meta name="ad.size" content="width=300,height=250">
+<link rel="stylesheet" type="text/css" href="style.css">
+<script src="GSAP.js"></script>
+</head>
+
+<body onload="myFunction()">
+
+    <div id="banner">
+        
+        <img src="bg.png" alt="bg" class="bg">
+
+        <img src="actor1.png" alt="actor" class="actor">
+        <img src="actor2.png" alt="actor" class="actor">
+        <img src="actor3.png" alt="actor" class="actor">
+
+        <img src="quote.png" alt="quote" class="quote">
+        <img src="van.png" alt="writer" class="writer">
+        <img src="j.png" alt="writer" class="writer">
+        <img src="u.png" alt="writer" class="writer">
+        <img src="l.png" alt="writer" class="writer">
+        <img src="i.png" alt="writer" class="writer">
+        <img src="a.png" alt="writer" class="writer">
+        <img src="f.png" alt="writer" class="writer">
+        <img src="r.png" alt="writer" class="writer">
+        <img src="a1.png" alt="writer" class="writer">
+        <img src="n.png" alt="writer" class="writer">
+        <img src="c.png" alt="writer" class="writer">
+        <img src="k.png" alt="writer" class="writer">
+
+        <img src="title1.png" alt="title" class="title1">
+        <img src="title2.png" alt="title" class="title">
+        <img src="title3.png" alt="title" class="title1">
+        <img src="girl.png" alt="girl" class="girl">
+
+        <img src="logo1.png" alt="logo" class="logo logo1">
+        <img src="logo2.png" alt="logo" class="logo logo2">
+        <img src="logo3.png" alt="logo" class="logo logo1">
+        <img src="logo4.png" alt="logo" class="logo logo">
+        <img src="logo5.png" alt="logo" class="logo logo2">
+
+        <img src="een1.png" alt="een" class="een1">
+        <img src="een2.png" alt="een" class="een2">
+
+        <img src="cta.png" alt="cta" class="cta">
+
+    </div>
+
+
+<script>
+    function myFunction() {
+
+        var tl = gsap.timeline({ });
+
+        tl
+            .to('img', { duration: 0, display:'block'})
+            
+            .to('.title, .title1', {duration: 0.5, opacity: 1,x: 0, stagger: 0.07, ease: 'power2.out'})
+            
+            .to('.logo', {duration: 0.5, opacity: 1, x: 0, ease: 'power2.out'})
+            .to('.een1, .een2', {duration: 0.5, opacity: 1, stagger: 0.07, y: 0, ease: 'power2.out'})
+            .to('.actor', {duration: 0.65, opacity: 1, x: 0, stagger: 0.1, ease: 'power2.out'})
+            .to('.quote', {duration: 0.65, opacity: 1, scale: 1, ease: 'power2.out'})
+            .to('.writer', {duration: 0.65, opacity: 1, x: 0, stagger: 0.1, ease: 'power2.out'})
+
+            .to('.cta', {duration: 0.65, y: 0, opacity: 1, ease: 'power2.out'})
+
+            .to('.cta', {duration: 0.3, scale: 1.05, yoyo: true, repeat: 3, ease: 'power2.out'}, '+=0.5')
+
+            .to('.cta', {duration: 0.3, scale: 1.05, yoyo: true, repeat: 3, ease: 'power2.out'}, '+=0.75')
+    
+        }
+    
+</script>
+
+<script type="text/javascript">
+    var clickTag = "https://cherrypickersfilm.nl/films/de-middagvrouw/";
+    var banner = document.getElementById("banner");
+    banner.style.cursor = "pointer";
+
+    banner.addEventListener("click", goURL);
+
+
+    function goURL() {
+        window.open(clickTag);
+    }
+</script>
+</body>
+</html>

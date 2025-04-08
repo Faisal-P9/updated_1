@@ -1,0 +1,79 @@
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+img {
+    position: absolute;
+    width: 300px;
+    height: 250px;
+    top: 0;
+    left: 0;
+}
+
+#banner {
+    position: relative;
+    width: 300px;
+    height: 250px;
+    overflow: hidden;
+    cursor: pointer;
+    background-color: #ffffff;
+    box-sizing: border-box;
+}
+
+.logo {
+    opacity: 0;
+}
+
+.logo1 {
+    transform: translateX(-20px);
+}
+
+.logo2 {
+    transform: translateX(20px);
+}
+
+.een1 {
+    transform: translateY(10px);
+    opacity: 0;
+}
+
+.een2 {
+    transform: translateY(10px);
+    opacity: 0;
+}
+
+.actor {
+    transform: translateX(20px);
+    opacity: 0;
+}
+
+.quote {
+    transform-origin: 198px 154px;
+    transform: scale(0.7);
+    opacity: 0;
+}
+
+.writer {
+    transform: translateX(20px);
+    opacity: 0;
+}
+
+.title1 {
+    opacity: 0;
+    transform: translateX(-20px);
+}
+.title {
+    opacity: 0;
+    transform: translateX(20px);
+}
+
+.cta {
+    transform: translateY(90px);
+    transform-origin: 200px 226px;
+}
+
+
+
+

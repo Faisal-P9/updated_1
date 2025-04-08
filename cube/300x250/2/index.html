@@ -1,0 +1,637 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>Norstat</title>
+<meta name="ad.size" content="width=300,height=250">
+<link rel="stylesheet" type="text/css" href="style.css">
+<script src="GSAP.js"></script>
+</head>
+
+<body onload="myFunction()">
+
+    <div id="banner">
+
+
+
+        <img src="f3_img.png" alt="f3_img" class="f3_img">
+        <div class="frame_3_bgcolor"></div>
+
+        <div class="frame_1_bgcolor"></div>
+        <div class="frame_2_bgcolor"></div>
+        <div class="f1_line"></div>
+        <div class="f1_line2"></div>
+        <div class="f2_line"></div>
+        <div class="f2_line2"></div>
+        <div class="f3_line"></div>
+        <img src="f1_t1.png" alt="f1_t1" class="f1_t">
+        <img src="f1_t2.png" alt="f1_t2" class="f1_t">
+
+        <img src="shape_1.png" alt="shape_1" class="shape_1 shape1">
+        <img src="shape_2.png" alt="shape_2" class="shape_2 shape1">
+        <img src="shape_3.png" alt="shape_3" class="shape_3 shape1">
+        <img src="shape_4.png" alt="shape_4" class="shape_4 shape2">
+        <img src="shape_5.png" alt="shape_5" class="shape_5 shape1">
+        <img src="shape_6.png" alt="shape_6" class="shape_6 shape2">
+        <img src="shape_7.png" alt="shape_7" class="shape_7 shape1">
+        <img src="shape_8.png" alt="shape_8" class="shape_8 shape2">
+        <img src="shape_9.png" alt="shape_9" class="shape_9 shape1">
+        <img src="shape_10.png" alt="shape_10" class="shape_10 shape2">
+        <img src="shape_11.png" alt="shape_11" class="shape_11 shape2">
+        <img src="shape_12.png" alt="shape_12" class="shape_12 shape2">
+        
+        <img src="shape_1.png" alt="shape_1" class="shape_1 shape2_1">
+        <img src="shape_2.png" alt="shape_2" class="shape_2 shape2_1">
+        <img src="shape_3.png" alt="shape_3" class="shape_3 shape2_1">
+        <img src="shape_4.png" alt="shape_4" class="shape_4  shape2_2">
+        <img src="shape_5.png" alt="shape_5" class="shape_5 shape2_1">
+        <img src="shape_6.png" alt="shape_6" class="shape_6  shape2_2">
+        <img src="shape_7.png" alt="shape_7" class="shape_7 shape2_1">
+        <img src="shape_8.png" alt="shape_8" class="shape_8  shape2_2">
+        <img src="shape_9.png" alt="shape_9" class="shape_9 shape2_1">
+        <img src="shape_10.png" alt="shape_10" class="shape_10  shape2_2">
+        <img src="shape_11.png" alt="shape_11" class="shape_11  shape2_2">
+        <img src="shape_12.png" alt="shape_12" class="shape_12  shape2_2">
+        
+        <img src="shape_1.png" alt="shape_1" class="shape_1 shape3_1">
+        <img src="shape_2.png" alt="shape_2" class="shape_2 shape3_1">
+        <img src="shape_3.png" alt="shape_3" class="shape_3 shape3_1">
+        <img src="shape_4.png" alt="shape_4" class="shape_4  shape3_2">
+        <img src="shape_5.png" alt="shape_5" class="shape_5 shape3_1">
+        <img src="shape_6.png" alt="shape_6" class="shape_6  shape3_2">
+        <img src="shape_7.png" alt="shape_7" class="shape_7 shape3_1">
+        <img src="shape_8.png" alt="shape_8" class="shape_8  shape3_2">
+        <img src="shape_9.png" alt="shape_9" class="shape_9 shape3_1">
+        <img src="shape_10.png" alt="shape_10" class="shape_10  shape3_2">
+        <img src="shape_11.png" alt="shape_11" class="shape_11  shape3_2">
+        <img src="shape_12.png" alt="shape_12" class="shape_12  shape3_2">
+        
+
+        <img src="shape_1.png" alt="shape_1" class="shape_1 shape4_1">
+        <img src="shape_2.png" alt="shape_2" class="shape_2 shape4_1">
+        <img src="shape_3.png" alt="shape_3" class="shape_3 shape4_1">
+        <img src="shape_4.png" alt="shape_4" class="shape_4  shape4_2">
+        <img src="shape_5.png" alt="shape_5" class="shape_5 shape4_1">
+        <img src="shape_6.png" alt="shape_6" class="shape_6  shape4_2">
+        <img src="shape_7.png" alt="shape_7" class="shape_7 shape4_1">
+        <img src="shape_8.png" alt="shape_8" class="shape_8  shape4_2">
+        <img src="shape_9.png" alt="shape_9" class="shape_9 shape4_1">
+        <img src="shape_10.png" alt="shape_10" class="shape_10  shape4_2">
+        <img src="shape_11.png" alt="shape_11" class="shape_11  shape4_2">
+        <img src="shape_12.png" alt="shape_12" class="shape_12  shape4_2">
+        
+        <!-- <img src="f2.png" alt="" class=""> -->
+
+        <img src="f2_t1.png" alt="f2_t1" class="f2_t">
+        <img src="f2_t2.png" alt="f2_t2" class="f2_t">
+        <img src="f2_t3.png" alt="f2_t3" class="f2_t">
+        
+        <img src="f2_interviews.png" alt="f2_interviews" class="f2_interviews f2_data">
+        <img src="f2_panelleden.png" alt="f2_panelleden" class="f2_panelleden f2_data">
+        <img src="f2_afgeronde.png" alt="f2_afgeronde" class="f2_afgeronde f2_data">
+        <img src="f2_tevreden.png" alt="f2_tevreden" class="f2_tevreden f2_data">
+        <img src="f2_landen.png" alt="f2_landen" class="f2_landen f2_data">
+
+        <div class="countDiv1">
+            <p id="countOne" data-from="0" data-to="8765432">0000000</p>
+        </div>
+
+        <div class="countDiv2">
+            <p id="countTwo" data-from="8765432" data-to="8987654"></p>
+        </div>
+
+        <div class="countDiv3 f2_data">
+            <p id="countThree" data-from="8987654" data-to="9000000"></p>
+        </div>
+
+
+        <div class="panelledencountDiv1">
+            <p id="panelledencountOne" data-from="0" data-to="1876543">0000000</p>
+        </div>
+
+        <div class="panelledencountDiv2">
+            <p id="panelledencountTwo" data-from="1876543" data-to="1987654"></p>
+        </div>
+
+        <div class="panelledencountDiv3 f2_data">
+            <p id="panelledencountThree" data-from="1987654" data-to="2000000"></p>
+        </div>
+
+        <div class="afgerondecountDiv1">
+            <p id="afgerondecountOne" data-from="0" data-to="08568">0000000</p>
+        </div>
+
+        <div class="afgerondecountDiv2">
+            <p id="afgerondecountTwo" data-from="08568" data-to="09342"></p>
+        </div>
+
+        <div class="afgerondecountDiv3 f2_data">
+            <p id="afgerondecountThree" data-from="09342" data-to="10000"></p>
+        </div>
+
+
+        <div class="tevredencountDiv1">
+            <p id="tevredencountOne" data-from="0" data-to="0838">0000</p>
+        </div>
+
+        <div class="tevredencountDiv2">
+            <p id="tevredencountTwo" data-from="0838" data-to="0968"></p>
+        </div>
+
+        <div class="tevredencountDiv3 f2_data">
+            <p id="tevredencountThree" data-from="0968" data-to="1800"></p>
+        </div>
+
+
+        <div class="landencountDiv1">
+            <p id="landencountOne" data-from="0" data-to="09">0</p>
+        </div>
+
+        <div class="landencountDiv2">
+            <p id="landencountTwo" data-from="09" data-to="15"></p>
+        </div>
+
+        <div class="landencountDiv3 f2_data">
+            <p id="landencountThree" data-from="15" data-to="18"></p>
+        </div>
+
+        <img src="f2_interviews_plus.png" alt="f2_interviews_plus" class="f2_interviews_plus f2_interviews f2_data">
+        <img src="f2_interviews_dot_1.png" alt="f2_interviews_dot_1" class="f2_interviews_dot_1 f2_interviews f2_data">
+        <img src="f2_interviews_dot_2.png" alt="f2_interviews_dot_2" class="f2_interviews_dot_2 f2_interviews f2_data">
+        <div class="f2_interviews_line f2_data"></div>
+        
+        <img src="f2_panelleden_plus.png" alt="f2_panelleden_plus" class="f2_panelleden_plus f2_panelleden f2_data">
+        <img src="f2_panelleden_dot_1.png" alt="f2_panelleden_dot_1" class="f2_panelleden_dot_1 f2_panelleden f2_data">
+        <img src="f2_panelleden_dot_2.png" alt="f2_panelleden_dot_2" class="f2_panelleden_dot_2 f2_panelleden f2_data">
+        <div class="f2_panelleden_line f2_data"></div>
+
+        <img src="f2_afgeronde_plus.png" alt="f2_afgeronde_plus" class="f2_afgeronde_plus f2_afgeronde f2_data">
+        <img src="f2_afgeronde_dot.png" alt="f2_afgeronde_dot" class="f2_afgeronde_dot f2_afgeronde f2_data">
+        <div class="f2_afgeronde_line f2_data"></div>
+
+        <img src="f2_tevreden_dot.png" alt="f2_tevreden_dot" class="f2_tevreden_dot f2_tevreden f2_data">
+        <div class="f2_tevreden_line f2_data"></div>
+        
+        <div class="f2_landen_line_top f2_data"></div>
+        <div class="f2_landen_line_bottom f2_data"></div>
+
+
+        <img src="f3_t1.png" alt="f3_t1" class="f3_t">
+        <img src="f3_t2.png" alt="f3_t2" class="f3_t">
+        <img src="f3_t3.png" alt="f3_t3" class="f3_t">
+       
+        <img src="logo1.png" alt="logo" class="logo">
+        <img src="logo2.png" alt="logo" class="logo">
+        <img src="logo3.png" alt="logo" class="logo">
+        <img src="logo4.png" alt="logo" class="logo">
+        <img src="logo5.png" alt="logo" class="logo">
+        <img src="logo6.png" alt="logo" class="logo">
+        <img src="logo7.png" alt="logo" class="logo">
+        <img src="small_logo.png" alt="small_logo" class="small_logo">
+        
+
+    </div>
+
+<script>
+    function myFunction() {
+
+        var tl = gsap.timeline({repeat: 0, repeatDelay: 0});
+
+        tl
+            .to('img', { duration: 0, display:'block' })
+            .add('f0')
+            .to('.small_logo', {duration: 0, opacity: 1, ease: 'none', onComplete: dataAnimation}, 'f0')
+            .to('.logo', {duration: 0.4, opacity: 1, stagger: 0.12, ease: 'power2.out'}, 'f0')
+            
+            .to('.f1_t', {duration: 0.6, x: 0, opacity: 1, stagger: 0.16, ease: 'power2.out'}, 'f0+=0.5')
+            .to('.f1_line', {duration: 0.6, width: 258, opacity: 1, ease: 'none'}, 'f0+=0.5')
+            .to('.f1_line2', {duration: 0, opacity: 1, ease: 'none'}, 'f0+=1.5')
+            .to('.f1_line', {duration: 0, opacity: 0, ease: 'none'}, 'f0+=1.6')
+            .to('.f1_t', {duration: 0.6, x: 40, opacity: 0, stagger: 0.16, ease: 'power2.out'}, 'f0+=2.7')           
+            .to('.f1_line2', {duration: 0.6, backgroundColor: '#00c999', width: 0, opacity: 1, ease: 'power2.out'}, 'f0+=2.7')
+
+            .add('f1')
+
+            .to('.frame_2_bgcolor', {duration: 0.6, x: 0, ease: 'power2.out'}, 'f1')
+            .to('.f2_line', {duration: 0.6, width: 258, opacity: 1, ease: 'power2.out'}, 'f1+=0.6')
+ 
+            
+            .to('.f2_t', {duration: 0.6, x: 0, opacity: 1, stagger: 0.16, ease: 'power2.out'}, 'f1+=0.6')
+            .to('.countDiv1, .panelledencountDiv1, .afgerondecountDiv1, .tevredencountDiv1, .landencountDiv1', { duration: 0, opacity: 1, ease: 'power2.out' }, 'f1')
+            .to('.f2_interviews, .f2_panelleden, .f2_afgeronde, .f2_tevreden, .f2_landen', { duration: 0, opacity: 1, ease: 'power2.out' }, 'f1')
+            .to('.countDiv1', { duration: 0, opacity: 1, ease: 'power2.out', onComplete: countOne }, 'f1+=0.6')
+            .to('.panelledencountDiv1', { duration: 0, opacity: 1, ease: 'power2.out', onComplete: panelledencountOne }, 'f1+=0.6')
+            .to('.afgerondecountDiv1', { duration: 0, opacity: 1, ease: 'power2.out', onComplete: afgerondecountOne }, 'f1+=0.6')
+            .to('.tevredencountDiv1', { duration: 0, opacity: 1, ease: 'power2.out', onComplete: tevredencountOne }, 'f1+=0.6')
+            .to('.landencountDiv1', { duration: 0, opacity: 1, ease: 'power2.out', onComplete: landencountOne }, 'f1+=0.6')
+            .to('.f2_panelleden_line, .f2_interviews_line, .f2_afgeronde_line, .f2_tevreden_line', {duration: 0.6, width: 124, opacity: 1, ease: 'power2.out'}, 'f1+=0.6')
+            .to('.f2_landen_line_top, .f2_landen_line_bottom', {duration: 0.6, width: 115, opacity: 1, ease: 'power2.out'}, 'f1+=0.6')
+
+            .add('f11', '-=0.25')
+            .to('.f2_line2', {duration: 0, opacity: 1, ease: 'none'}, 'f11')
+            .to('.f2_line', {duration: 0, opacity: 0, ease: 'none'}, 'f11+=.1')
+            .to('.frame_1_bgcolor', {duration: 0.1, opacity: 0, ease: 'power2.out'}, 'f11')
+            .to('.countDiv1, .panelledencountDiv1, .afgerondecountDiv1, .tevredencountDiv1, .landencountDiv1', { duration: 0, opacity: 0, ease: 'power2.out' }, 'f11')
+            .to('.countDiv2', { duration: 0, opacity: 1, ease: 'power2.out', onComplete: countTwo }, 'f11-=.05')
+            .to('.panelledencountDiv2', { duration: 0, opacity: 1, ease: 'power2.out', onComplete: panelledencountTwo }, 'f11-=.05')
+            .to('.afgerondecountDiv2', { duration: 0, opacity: 1, ease: 'power2.out', onComplete: afgerondecountTwo }, 'f11-=.05')
+            .to('.tevredencountDiv2', { duration: 0, opacity: 1, ease: 'power2.out', onComplete: tevredencountTwo }, 'f11-=.05')
+            .to('.landencountDiv2', { duration: 0, opacity: 1, ease: 'power2.out', onComplete: landencountTwo }, 'f11-=.05')
+            
+            .add('f12', '-=0.25')
+            .to('.countDiv2, .panelledencountDiv2, .afgerondecountDiv2, .tevredencountDiv2, .landencountDiv2', { duration: 0, opacity: 0, ease: 'power2.out' }, 'f12')
+            .to('.countDiv3', { duration: 0, opacity: 1, ease: 'power2.out', onComplete: countThree }, 'f12-=.05')
+            .to('.panelledencountDiv3', { duration: 0, opacity: 1, ease: 'power2.out', onComplete: panelledencountThree }, 'f12-=.05')
+            .to('.afgerondecountDiv3', { duration: 0, opacity: 1, ease: 'power2.out', onComplete: afgerondecountThree }, 'f12-=.05')
+            .to('.tevredencountDiv3', { duration: 0, opacity: 1, ease: 'power2.out', onComplete: tevredencountThree }, 'f12-=.05')
+            .to('.landencountDiv3', { duration: 0, opacity: 1, ease: 'power2.out', onComplete: landencountThree }, 'f12-=.05')
+            
+            
+            
+            .add('f3', '+=2')
+            .to('.f2_t', {duration: 0.5, x: 20, opacity: 0, stagger: 0.16, ease: 'power2.out'}, 'f3-=0.4')
+            .to('.f2_data', {duration: 0.4, opacity: 0, ease: 'power2.inOut'}, 'f3-=0.3')
+            .to('.frame_2_bgcolor', {duration: 0.6, x: 300, ease: 'power2.inOut'}, 'f3')
+            .to('.f2_line2', {duration: 0.6, backgroundColor: '#ffffff', width: 0, opacity: 1, ease: 'power2.out'}, 'f3-=0.2')
+
+            .to('.frame_3_bgcolor', {duration: 0.6, y: -99, ease: 'power2.inOut'}, 'f3+=0.5')
+            .to('.f3_line', {duration: 0.6, width: 258, opacity: 1, ease: 'power2.out'}, 'f3+=1.1')
+            .to('.f3_t', {duration: 0.6, x: 0, opacity: 1, stagger: 0.16, ease: 'power2.out'}, 'f3+=1.1')
+            
+
+
+
+            function dataAnimation() {
+                var t2 = gsap.timeline({});
+
+                t2
+                .to('.shape1', {duration: 0.6, x: 300, opacity: 0.6, stagger: 0.12, ease: 'none'})
+                .to('.shape2_1', {duration: 0.6, x: 300, opacity: 0.6, stagger: 0.12, ease: 'none'}, '-=0.45')
+                .to('.shape3_1', {duration: 0.6, x: 300, opacity: 0.6, stagger: 0.12, ease: 'none'}, '-=0.45')
+                .to('.shape4_1', {duration: 0.6, x: 300, opacity: 0.6, stagger: 0.12, ease: 'none'}, '-=0.45')
+        
+
+                var t3 = gsap.timeline({});
+
+                t3
+                .to('.shape2', {duration: 0.6, x: 300, opacity: 0.6, stagger: 0.12, ease: 'none'})
+                .to('.shape2_2', {duration: 0.6, x: 300, opacity: 0.6, stagger: 0.12, ease: 'none'}, '-=0.45')
+                .to('.shape3_2', {duration: 0.6, x: 300, opacity: 0.6, stagger: 0.12, ease: 'none'}, '-=0.45')
+                .to('.shape4_2', {duration: 0.6, x: 300, opacity: 0.6, stagger: 0.12, ease: 'none'}, '-=0.45')
+                
+               
+            }
+            
+    }
+
+
+    
+</script>
+
+<script>
+
+
+    function countOne() {
+        const el1 = {
+        count1: document.getElementById('countOne')
+        }
+        const DURATION1 = .6
+       
+
+        var from = parseInt(el1.count1.dataset.from, 0)
+        var to = parseInt(el1.count1.dataset.to, 10)
+        let obj1 = {count1: from}
+        
+        gsap.to(obj1, DURATION1, {
+            count1: to,
+            ease: Power0.easeNone,
+            onUpdate: () => {
+            el1.count1.textContent = Math.floor(obj1.count1)
+            }
+        })
+        
+    }
+
+    function countTwo() {
+        const el2 = {
+        count2: document.getElementById('countTwo')
+        }
+        const DURATION2 = 0.8
+       
+
+        var from = parseInt(el2.count2.dataset.from, 10)
+        var to = parseInt(el2.count2.dataset.to, 10)
+        let obj2 = {count2: from}
+        
+        gsap.to(obj2, DURATION2, {
+            count2: to,
+            ease: Power0.easeNone,
+            onUpdate: () => {
+            el2.count2.textContent = Math.floor(obj2.count2)
+            }
+        })
+        
+    }
+
+    function countThree() {
+        const el3 = {
+        count3: document.getElementById('countThree')
+        }
+        const DURATION3 = 1.2
+       
+
+        var from = parseInt(el3.count3.dataset.from, 10)
+        var to = parseInt(el3.count3.dataset.to, 10)
+        let obj3 = {count3: from}
+        
+        gsap.to(obj3, DURATION3, {
+            count3: to,
+            ease: Power0.easeNone,
+            onUpdate: () => {
+            el3.count3.textContent = Math.floor(obj3.count3)
+            }
+        })
+        
+    }
+
+
+
+    function panelledencountOne() {
+        const el1 = {
+        count1: document.getElementById('panelledencountOne')
+        }
+        const DURATION1 = .6
+       
+
+        var from = parseInt(el1.count1.dataset.from, 0)
+        var to = parseInt(el1.count1.dataset.to, 10)
+        let obj1 = {count1: from}
+        
+        gsap.to(obj1, DURATION1, {
+            count1: to,
+            ease: Power0.easeNone,
+            onUpdate: () => {
+            el1.count1.textContent = Math.floor(obj1.count1)
+            }
+        })
+        
+    }
+
+    function panelledencountTwo() {
+        const el2 = {
+        count2: document.getElementById('panelledencountTwo')
+        }
+        const DURATION2 = 0.8
+       
+
+        var from = parseInt(el2.count2.dataset.from, 10)
+        var to = parseInt(el2.count2.dataset.to, 10)
+        let obj2 = {count2: from}
+        
+        gsap.to(obj2, DURATION2, {
+            count2: to,
+            ease: Power0.easeNone,
+            onUpdate: () => {
+            el2.count2.textContent = Math.floor(obj2.count2)
+            }
+        })
+        
+    }
+
+    function panelledencountThree() {
+        const el3 = {
+        count3: document.getElementById('panelledencountThree')
+        }
+        const DURATION3 = 1.2
+       
+
+        var from = parseInt(el3.count3.dataset.from, 10)
+        var to = parseInt(el3.count3.dataset.to, 10)
+        let obj3 = {count3: from}
+        
+        gsap.to(obj3, DURATION3, {
+            count3: to,
+            ease: Power0.easeNone,
+            onUpdate: () => {
+            el3.count3.textContent = Math.floor(obj3.count3)
+            }
+        })
+        
+    }
+
+
+
+
+    function afgerondecountOne() {
+        const el1 = {
+        count1: document.getElementById('afgerondecountOne')
+        }
+        const DURATION1 = .6
+       
+
+        var from = parseInt(el1.count1.dataset.from, 0)
+        var to = parseInt(el1.count1.dataset.to, 10)
+        let obj1 = {count1: from}
+        
+        gsap.to(obj1, DURATION1, {
+            count1: to,
+            ease: Power0.easeNone,
+            onUpdate: () => {
+            el1.count1.textContent = Math.floor(obj1.count1)
+            }
+        })
+        
+    }
+
+    function afgerondecountTwo() {
+        const el2 = {
+        count2: document.getElementById('afgerondecountTwo')
+        }
+        const DURATION2 = 0.8
+       
+
+        var from = parseInt(el2.count2.dataset.from, 10)
+        var to = parseInt(el2.count2.dataset.to, 10)
+        let obj2 = {count2: from}
+        
+        gsap.to(obj2, DURATION2, {
+            count2: to,
+            ease: Power0.easeNone,
+            onUpdate: () => {
+            el2.count2.textContent = Math.floor(obj2.count2)
+            }
+        })
+        
+    }
+
+    function afgerondecountThree() {
+        const el3 = {
+        count3: document.getElementById('afgerondecountThree')
+        }
+        const DURATION3 = 1.2
+       
+
+        var from = parseInt(el3.count3.dataset.from, 10)
+        var to = parseInt(el3.count3.dataset.to, 10)
+        let obj3 = {count3: from}
+        
+        gsap.to(obj3, DURATION3, {
+            count3: to,
+            ease: Power0.easeNone,
+            onUpdate: () => {
+            el3.count3.textContent = Math.floor(obj3.count3)
+            }
+        })
+        
+    }
+
+
+
+
+    function tevredencountOne() {
+        const el1 = {
+        count1: document.getElementById('tevredencountOne')
+        }
+        const DURATION1 = .6
+       
+
+        var from = parseInt(el1.count1.dataset.from, 0)
+        var to = parseInt(el1.count1.dataset.to, 10)
+        let obj1 = {count1: from}
+        
+        gsap.to(obj1, DURATION1, {
+            count1: to,
+            ease: Power0.easeNone,
+            onUpdate: () => {
+            el1.count1.textContent = Math.floor(obj1.count1)
+            }
+        })
+        
+    }
+
+    function tevredencountTwo() {
+        const el2 = {
+        count2: document.getElementById('tevredencountTwo')
+        }
+        const DURATION2 = 0.8
+       
+
+        var from = parseInt(el2.count2.dataset.from, 10)
+        var to = parseInt(el2.count2.dataset.to, 10)
+        let obj2 = {count2: from}
+        
+        gsap.to(obj2, DURATION2, {
+            count2: to,
+            ease: Power0.easeNone,
+            onUpdate: () => {
+            el2.count2.textContent = Math.floor(obj2.count2)
+            }
+        })
+        
+    }
+
+    function tevredencountThree() {
+        const el3 = {
+        count3: document.getElementById('tevredencountThree')
+        }
+        const DURATION3 = 1.2
+       
+
+        var from = parseInt(el3.count3.dataset.from, 10)
+        var to = parseInt(el3.count3.dataset.to, 10)
+        let obj3 = {count3: from}
+        
+        gsap.to(obj3, DURATION3, {
+            count3: to,
+            ease: Power0.easeNone,
+            onUpdate: () => {
+            el3.count3.textContent = Math.floor(obj3.count3)
+            }
+        })
+        
+    }
+
+
+
+
+
+    function landencountOne() {
+        const el1 = {
+        count1: document.getElementById('landencountOne')
+        }
+        const DURATION1 = .6
+       
+
+        var from = parseInt(el1.count1.dataset.from, 0)
+        var to = parseInt(el1.count1.dataset.to, 10)
+        let obj1 = {count1: from}
+        
+        gsap.to(obj1, DURATION1, {
+            count1: to,
+            ease: Power0.easeNone,
+            onUpdate: () => {
+            el1.count1.textContent = Math.floor(obj1.count1)
+            }
+        })
+        
+    }
+
+    function landencountTwo() {
+        const el2 = {
+        count2: document.getElementById('landencountTwo')
+        }
+        const DURATION2 = 0.8
+       
+
+        var from = parseInt(el2.count2.dataset.from, 10)
+        var to = parseInt(el2.count2.dataset.to, 10)
+        let obj2 = {count2: from}
+        
+        gsap.to(obj2, DURATION2, {
+            count2: to,
+            ease: Power0.easeNone,
+            onUpdate: () => {
+            el2.count2.textContent = Math.floor(obj2.count2)
+            }
+        })
+        
+    }
+
+    function landencountThree() {
+        const el3 = {
+        count3: document.getElementById('landencountThree')
+        }
+        const DURATION3 = 1.2
+       
+
+        var from = parseInt(el3.count3.dataset.from, 10)
+        var to = parseInt(el3.count3.dataset.to, 10)
+        let obj3 = {count3: from}
+        
+        gsap.to(obj3, DURATION3, {
+            count3: to,
+            ease: Power0.easeNone,
+            onUpdate: () => {
+            el3.count3.textContent = Math.floor(obj3.count3)
+            }
+        })
+        
+    }
+
+
+</script>
+
+
+<script type="text/javascript">
+    var clickTag = "https://www.google.com/";
+    var banner = document.getElementById("banner");
+    banner.style.cursor = "pointer";
+
+    banner.addEventListener("click", goURL);
+
+
+    function goURL() {
+        window.open(clickTag);
+    }
+</script>
+</body>
+</html>

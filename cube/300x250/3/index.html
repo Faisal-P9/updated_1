@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Dekamarkt</title>
+    <meta charset="UTF-8">
+    <meta name="ad.size" content="width=300,height=250">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="GSAP.js"></script>
+    
+</head>
+<body onload="myFunction()">
+
+    <div id="banner">
+
+        <div id="frame_one">
+            <img src="bg_one.jpg" class="bg_one">
+            <img src="brand.png" class="brand">
+            <img src="korting.png" class="korting">
+            <div class="countDiv1">
+                <p id="countOne" data-from="50" data-to="88">50</p>
+            </div>
+
+            <img src="f1_title.png" class="f1_title sub">
+            <img src="f1_subtitle_1.png" class="f1_sub sub">
+            <img src="f1_subtitle_2.png" class="f2_sub sub">
+            <img src="f1_subtitle_3.png" class="f3_sub sub">
+            <img src="f1_shape.png" class="f1_shape">
+            <img src="f1_shape_text.png" class="f1_shape_text">
+        </div>
+
+        <div id="frame_two">
+            <img src="bg_two.jpg" class="bg_two">
+            <img src="f2_korting.png" class="f2_korting">
+            <img src="f2_shape.png" class="f2_shape">
+            <img src="f2_shape_text_1.png" class="f2_shape_text_1 f2_shape_text">
+            <img src="f2_shape_text_2.png" class="f2_shape_text_2 f2_shape_text">
+
+        </div>
+
+        <div id="frame_four">
+            <img src="bg_four.jpg" class="bg_four">
+            <img src="f4_korting_1.png" class="f4_korting_1 f4_kort">
+            <img src="f4_korting_2.png" class="f4_korting_2 f4_kort">
+            <img src="f4_korting_3.png" class="f4_korting_3 f4_kort">
+            <img src="f4_korting_4.png" class="f4_korting_4 f4_kort">
+            <img src="f4_korting_5.png" class="f4_korting_5 f4_kort">
+            <img src="f4_korting_6.png" class="f4_korting_6 f4_kort">
+            <img src="f4_korting_7.png" class="f4_korting_7 f4_kort">
+            <img src="knife.png" class="knife_1 knife">
+            <img src="f4_shape.png" class="f4_shape">
+            <img src="f4_shape_text.png" class="f4_shape_text">
+            <img src="f4_circle.png" class="f4_circle">
+            <img src="f4_text.png" class="f4_text">
+        </div>
+
+        <img src="cta_bg.png" class="cta_bg">
+        <img src="cta_1_text.png" class="cta_1_text">
+        <img src="cta_2_text.png" class="cta_2_text">
+        <img src="cta_4_text.png" class="cta_4_text">
+        <img src="f2_overlay.png" class="f2_overlay">
+        <img src="f4_overlay.png" class="f4_overlay">
+        <img src="logo.png" class="logo">
+
+    </div>
+
+    <script>
+
+
+        function countOne() {
+            const el1 = {
+            count1: document.getElementById('countOne')
+            }
+            const DURATION1 = 0.6
+           
+
+            var from = parseInt(el1.count1.dataset.from, 10)
+            var to = parseInt(el1.count1.dataset.to, 10)
+            let obj1 = {count1: from}
+            
+            gsap.to(obj1, DURATION1, {
+                count1: to,
+                ease: Power0.easeNone,
+                onUpdate: () => {
+                el1.count1.textContent = Math.floor(obj1.count1)
+                }
+            })
+            
+        }
+
+    </script>
+
+
+
+
+
+
+    <script>
+        
+        
+        function myFunction() {
+
+        var t1 = gsap.timeline({});
+
+            t1
+            .to('img, #frame_one', { duration: 0, display: 'block' })
+
+            .to('.logo, .brand', { duration: 0.2, opacity: 1, ease: 'power2.out' })
+        
+            .add('elem', '+=.2')
+            .to('.korting, .countDiv1', { duration: 0.7, rotationY: '360deg', ease: 'power2.out' }, 'elem')
+            .to('.countDiv1', { duration: 0, opacity: 1, ease: 'power2.out' })
+            .to('.sub', { duration: .7, y: 0, stagger: 0.15, opacity: 1, ease: 'back.out' })
+            .to('.f1_shape', { duration: .5, width: 209, ease: 'power4.inOut' }, '-=.2')
+            .to('.f1_shape_text', { duration: .5, opacity: 1, ease: 'power2.out' }, '-=.1')
+            .to('.countDiv1', { duration: 0, opacity: 1, ease: 'power2.out', onComplete: countOne }, '-=.2')
+            .add('f3', '+=.5')
+            .to('.cta_bg, .cta_1_text', { duration: .5, opacity: 1, y: 0, ease: 'power2.inOut' }, 'f3')
+        
+
+            .add('elem1', '+=.1')
+            .to('#frame_two', { duration: 0.6, x: 0, ease: 'power2.inOut' },'elem1')
+            .to('#frame_one', { duration: 0.6, x: -300, ease: 'power2.inOut' },'elem1')
+            .to('.f2_overlay', { duration: 0, opacity: 1, ease: 'power0.none' },'elem1+=.5')
+            .to('.cta_2_text', { duration: 0, opacity: 1, ease: 'power0.none' },'elem1+=.5')
+            .to('.cta_1_text', { duration: .5, x: -150, ease: 'power1.out' },'elem1+=.6')
+            .to('.cta_2_text', { duration: .5, x: 0, ease: 'power1.out' },'elem1+=.6')
+
+            .to('.f2_shape', { duration: .5, width: 194, ease: 'power4.inOut' }, '-=.3')
+            .to('.f2_shape_text', { duration: .5, opacity: 1, stagger: 0.2, ease: 'power2.out' }, '-=.1')
+            .to('.f2_korting', { duration: .5, rotationY: '0deg', opacity: 1, ease: 'power3.inOut' }, '-=.2')
+            .to('.f2_overlay, .cta_1_text', { duration: 0, opacity: 0, ease: 'power0.none' })
+            
+
+            .add('elem3', '+=.1')
+            .to('#frame_four', { duration: 0.6, x: 0, ease: 'power2.inOut' },'elem3')
+            .to('#frame_two', { duration: 0.6, x: -300, ease: 'power2.inOut' },'elem3')
+            .to('.f4_overlay', { duration: 0, opacity: 1, ease: 'power0.none' },'elem3+=.5')
+            .to('.cta_4_text', { duration: 0, opacity: 1, ease: 'power0.none' },'elem3+=.5')
+            .to('.cta_2_text', { duration: .5, x: -150, ease: 'power1.out' },'elem3+=.6')
+            .to('.cta_4_text', { duration: .5, x: 0, ease: 'power1.out' },'elem3+=.6')
+            .to('.f4_shape', { duration: .5, width: 280.5, ease: 'power4.inOut' }, '-=.2')
+            .to('.f4_shape_text', { duration: .5, opacity: 1, ease: 'power2.out' }, '-=.1')
+            .to('.f4_circle', { duration: .5, scale: 1, rotationZ: '0deg', opacity: 1, ease: 'power3.inOut' }, '-=.2')
+            .to('.f4_text', { duration: .5, opacity: 1, y: 0, ease: 'power2.out' }, '-=.2')
+            .to('.f4_overlay, .cta_2_text', { duration: 0, opacity: 0, ease: 'power0.none' })
+            
+            .to('.f4_korting_1', { duration: 0.2, scale: 1.2, ease: 'power1.inOut' }, '+=.3')
+            .to('.f4_korting_1', { duration: 0.2, scale: 1, ease: 'power1.inOut' })
+            .to('.f4_korting_2', { duration: 0.2, scale: 1.2, ease: 'power1.inOut' }, '-=.3')
+            .to('.f4_korting_2', { duration: 0.2, scale: 1, ease: 'power1.inOut' })
+            .to('.f4_korting_3', { duration: 0.2, scale: 1.2, ease: 'power1.inOut' }, '-=.3')
+            .to('.f4_korting_3', { duration: 0.2, scale: 1, ease: 'power1.inOut' })
+            .to('.f4_korting_4', { duration: 0.2, scale: 1.2, ease: 'power1.inOut' }, '-=.3')
+            .to('.f4_korting_4', { duration: 0.2, scale: 1, ease: 'power1.inOut' })
+            .to('.f4_korting_5', { duration: 0.2, scale: 1.2, ease: 'power1.inOut' }, '-=.3')
+            .to('.f4_korting_5', { duration: 0.2, scale: 1, ease: 'power1.inOut' })
+            .to('.f4_korting_6', { duration: 0.2, scale: 1.2, ease: 'power1.inOut' }, '-=.3')
+            .to('.f4_korting_6', { duration: 0.2, scale: 1, ease: 'power1.inOut' })
+            .to('.f4_korting_7', { duration: 0.2, scale: 1.2, ease: 'power1.inOut' }, '-=.3')
+            .to('.f4_korting_7', { duration: 0.2, scale: 1, ease: 'power1.inOut' })
+            
+            .to('.cta_bg, .cta_4_text', { duration: .3, scale: 1.1, ease: 'power2.out' }, '+=0.2')
+            .to('.cta_bg, .cta_4_text', { duration: .3, scale: 1, ease: 'power2.out' })
+            .to('.cta_bg, .cta_4_text', { duration: .3, scale: 1.1, ease: 'power2.out' })
+            .to('.cta_bg, .cta_4_text', { duration: .3, scale: 1, ease: 'power2.out' })
+           
+
+        }
+
+    </script>
+
+    <script>
+
+function getOS() {
+        var userAgent = window.navigator.userAgent,
+            platform = window.navigator.platform,
+            macosPlatforms = ['Macintosh', 'MacIntel', 'MacPPC', 'Mac68K'],
+            windowsPlatforms = ['Win32', 'Win64', 'Windows', 'WinCE'],
+            iosPlatforms = ['iPhone', 'iPad', 'iPod'],
+            os = null;
+        var countDivOne = document.querySelector('.countDiv1');
+        var countDivTwo = document.querySelector('.countDiv2');
+        var countDivThree = document.querySelector('.countDiv3');
+
+        if (macosPlatforms.indexOf(platform) !== -1) {
+            countDivOne.style.top = '48.5px';
+            countDivTwo.style.top = '48.5px';
+            countDivThree.style.top = '48.5px';
+            countDivOne.style.left = '211.5px';
+            countDivTwo.style.left = '211.5px';
+            countDivThree.style.left = '211.5px';
+            
+        }else if (windowsPlatforms.indexOf(platform) !== -1) {
+            countDivOne.style.top = '45px';
+            countDivTwo.style.top = '45px';
+            countDivThree.style.top = '45px';
+            countDivOne.style.left = '211px';
+            countDivTwo.style.left = '211px';
+            countDivThree.style.left = '211px';
+        }
+        return os;
+        }
+        
+    </script>
+
+    <script type="text/javascript">
+
+        var clickTag1 = "https://www.dekamarkt.nl/";
+        var banner = document.getElementById("banner");
+        banner.style.cursor = "pointer";
+        banner.addEventListener("click", goURL1);
+       
+        function goURL1() {
+            window.open(clickTag1);
+        }
+
+    </script>
+
+</body>
+</html>
